@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dra. Fabiola Díaz",
+  title: "Dra. Karla Fabiola Díaz Corral",
   description: "Consulta médica de la Dra. Fabiola Díaz. Medicina con calidez y compromiso.",
 };
 

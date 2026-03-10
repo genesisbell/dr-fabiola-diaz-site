@@ -15,21 +15,21 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#500c5a] text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-secondary text-white">
+      <div className="page-container py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Col 1: Logo + tagline */}
           <div className="flex flex-col gap-4">
             <Image
               src="/logo.svg"
-              alt="Dra. Fabiola Díaz"
+              alt={t.general.doctorName}
               height={48}
               width={160}
               unoptimized
-              className="h-12 w-auto brightness-0 invert"
+              className="h-12 w-auto"
             />
             <p className="text-sm text-purple-200">
-              Medicina con calidez y compromiso.
+              {t.general.tagline}
             </p>
           </div>
 
@@ -43,7 +43,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="text-sm text-white hover:text-[#0297ce] transition-colors"
+                    className="text-sm text-white hover:text-primary transition-colors"
                   >
                     {label}
                   </Link>
@@ -58,9 +58,9 @@ export default function Footer() {
               {t.footer.contactUs}
             </h3>
             <ul className="flex flex-col gap-2 text-sm text-white">
-              <li>📍 Dirección pendiente</li>
-              <li>📞 Teléfono pendiente</li>
-              <li>✉️ Email pendiente</li>
+              <li>📍 {t.footer.addressPlaceholder}</li>
+              <li>📞 {t.footer.phonePlaceholder}</li>
+              <li>✉️ {t.footer.emailPlaceholder}</li>
             </ul>
           </div>
         </div>
@@ -68,18 +68,18 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-purple-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-sm text-purple-300">
-          © {year} Dra. Fabiola Díaz. {t.footer.rights}
+        <div className="page-container py-4 text-center text-sm text-purple-300">
+          © {year} {t.general.doctorName}. {t.footer.rights}
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-4 text-center text-xs text-purple-400">
-          Hecho con &lt;3 por{" "}
+        <div className="page-container pb-4 text-center text-xs text-purple-400">
+          {t.footer.madeWith}{" "}
           <a
             href="https://margaretsoftware.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
           >
-            Margaret Software
+            {t.footer.madeBy}
           </a>
         </div>
       </div>

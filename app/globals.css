@@ -10,17 +10,56 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Brand palette */
+  --color-primary: #0297ce;
+  --color-primary-dark: #0280b0;
+  --color-secondary: #500c5a;
+  --color-accent: #e94420;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  /* Shared page-width wrapper */
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Nav link — default + active state handled via className merge in component */
+  .nav-link {
+    @apply text-sm font-medium text-gray-700 transition-colors hover:text-primary;
+  }
+
+  /* Primary CTA button */
+  .btn-primary {
+    @apply bg-primary text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-primary-dark transition-colors;
+  }
+
+  /* Outline / secondary button */
+  .btn-outline {
+    @apply border border-primary text-primary text-sm font-medium px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-colors;
+  }
+
+  /* WhatsApp button */
+  .btn-whatsapp {
+    @apply bg-[#25D366] text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-[#1ebe5d] transition-colors;
+  }
+
+  /* Call button */
+  .btn-secondary {
+    @apply bg-secondary text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-[#3d0946] transition-colors;
+  }
+
+  /* Accent texture background — used in about section */
+  .bg-accent-texture {
+    background-color: var(--color-primary);
+    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+    /*background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");*/
+  }
 }

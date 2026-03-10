@@ -1,5 +1,10 @@
 {
   "quickLinks": "Enlaces rápidos",
   "contactUs": "Contáctanos",
-  "rights": "Todos los derechos reservados."
+  "rights": "Todos los derechos reservados.",
+  "addressPlaceholder": "Dirección pendiente",
+  "phonePlaceholder": "Teléfono pendiente",
+  "emailPlaceholder": "Email pendiente",
+  "madeWith": "Hecho con ♥ por",
+  "madeBy": "Margaret Software"
 }

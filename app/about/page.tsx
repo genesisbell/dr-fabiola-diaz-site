@@ -1,7 +1,9 @@
+import SectionContainer from "@/components/layout/SectionContainer";
+
 export default function AboutPage() {
   return (
-    <main>
+    <SectionContainer>
       <h1>About</h1>
-    </main>
+    </SectionContainer>
   );
 }

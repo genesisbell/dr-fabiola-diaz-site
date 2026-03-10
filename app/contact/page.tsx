@@ -1,7 +1,9 @@
+import SectionContainer from "@/components/layout/SectionContainer";
+
 export default function ContactPage() {
   return (
-    <main>
+    <SectionContainer>
       <h1>Contact</h1>
-    </main>
+    </SectionContainer>
   );
 }

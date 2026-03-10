@@ -23,15 +23,19 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
+        <Link href="/" className="flex items-center gap-3 flex-shrink-0">
           <Image
             src="/logo.svg"
-            alt="Dra. Fabiola Díaz"
+            alt={t.general.doctorName}
             height={48}
-            width={160}
+            width={48}
             unoptimized
             className="h-12 w-auto"
           />
+          <div className="flex flex-col leading-tight">
+            <span className="text-sm font-semibold text-gray-900">{t.general.doctorName}</span>
+            <span className="text-xs text-primary">{t.general.specialty}</span>
+          </div>
         </Link>
 
         {/* Desktop nav */}
@@ -40,9 +44,7 @@ export default function Navbar() {
             <li key={href}>
               <Link
                 href={href}
-                className={`text-sm font-medium transition-colors hover:text-[#0297ce] ${
-                  pathname === href ? "text-[#0297ce]" : "text-gray-700"
-                }`}
+                className={`nav-link ${pathname === href ? "text-primary" : ""}`}
               >
                 {label}
               </Link>
@@ -54,7 +56,7 @@ export default function Navbar() {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="bg-[#0297ce] text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-[#0280b0] transition-colors"
+            className="btn-primary"
           >
             {t.nav.contact}
           </Link>
@@ -87,9 +89,7 @@ export default function Navbar() {
                 <Link
                   href={href}
                   onClick={() => setMenuOpen(false)}
-                  className={`block text-sm font-medium transition-colors hover:text-[#0297ce] ${
-                    pathname === href ? "text-[#0297ce]" : "text-gray-700"
-                  }`}
+                  className={`nav-link block ${pathname === href ? "text-primary" : ""}`}
                 >
                   {label}
                 </Link>
