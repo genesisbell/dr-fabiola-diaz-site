@@ -32,12 +32,22 @@ export default function AboutSection() {
           className="flex-shrink-0 z-10 md:-mr-8 -mb-6 md:mb-0"
           {...slideIn("left")}
         >
+          {/* Mobile: cut version */}
+          <Image
+            src="/doctor-cut-v2.png"
+            alt={t.general.doctorName}
+            width={360}
+            height={460}
+            className="block md:hidden w-[360px] h-auto drop-shadow-2xl"
+            priority
+          />
+          {/* Desktop: full version */}
           <Image
             src="/doctor-v2.png"
             alt={t.general.doctorName}
             width={460}
             height={600}
-            //className="w-[280px] md:w-[380px] h-auto drop-shadow-2xl"
+            className="hidden md:block drop-shadow-2xl"
             priority
           />
         </motion.div>

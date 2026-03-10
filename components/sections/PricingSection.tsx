@@ -50,7 +50,7 @@ export default function PricingSection() {
                 <p className="text-xs text-purple-300 leading-relaxed italic">{item.note}</p>
               )}
               {item.ctaType === "call" ? (
-                <a href={t.footer.phoneUrl} className="mt-auto btn-secondary inline-flex items-center justify-center gap-2">
+                <a href={t.footer.phoneUrl} className="mt-auto btn-accent inline-flex items-center justify-center gap-2">
                   <PhoneIcon />
                   {t.nav.callNow}
                 </a>
