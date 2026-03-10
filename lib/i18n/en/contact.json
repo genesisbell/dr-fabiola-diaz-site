@@ -1,0 +1,28 @@
+{
+  "title": "Contact",
+  "subtitle": "Fill out the form and we will get in touch with you shortly.",
+  "fields": {
+    "parentName": {
+      "label": "Parent or guardian's name",
+      "placeholder": "E.g. Maria García"
+    },
+    "name": {
+      "label": "Child's name",
+      "placeholder": "E.g. Sofia García"
+    },
+    "age": {
+      "label": "Age",
+      "placeholder": "E.g. 7"
+    },
+    "reason": {
+      "label": "Reason for consultation",
+      "placeholder": "Briefly describe the reason for the consultation..."
+    },
+    "phone": {
+      "label": "Phone number",
+      "placeholder": "E.g. +52 55 1234 5678"
+    }
+  },
+  "submit": "Send request",
+  "success": "Thank you! We received your request and will contact you soon."
+}

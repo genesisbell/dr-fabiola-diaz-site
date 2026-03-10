@@ -16,6 +16,11 @@
   --color-primary-dark: #0280b0;
   --color-secondary: #500c5a;
   --color-accent: #e94420;
+
+  /* Social media */
+  --color-instagram: #E1306C;
+  --color-facebook: #1877F2;
+  --color-whatsapp: #25D366;
 }
 
 
@@ -59,6 +64,16 @@ body {
   /* Accent / orange CTA button */
   .btn-accent {
     @apply bg-[#e94420] text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-[#c93818] transition-all hover:-translate-y-0.5 hover:shadow-md active:translate-y-0;
+  }
+
+  /* Social media pill buttons */
+  .social-btn {
+    @apply flex flex-1 items-center justify-center gap-2 rounded-xl border border-gray-200 py-3 text-sm font-medium text-gray-600 transition;
+  }
+
+  /* Shared form input style */
+  .form-input {
+    @apply rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition;
   }
 
   /* Accent texture background — used in about section */

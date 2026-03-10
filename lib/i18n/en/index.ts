@@ -6,7 +6,8 @@ import profile from "./profile.json";
 import pricing from "./pricing.json";
 import location from "./location.json";
 import booking from "./booking.json";
+import contact from "./contact.json";
 
-const en = { nav, footer, general, about, profile, pricing, location, booking };
+const en = { nav, footer, general, about, profile, pricing, location, booking, contact };
 
 export default en;

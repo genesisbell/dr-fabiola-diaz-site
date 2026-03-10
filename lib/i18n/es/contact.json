@@ -1,0 +1,28 @@
+{
+  "title": "Contacto",
+  "subtitle": "Completa el formulario y nos pondremos en contacto contigo a la brevedad.",
+  "fields": {
+    "parentName": {
+      "label": "Nombre del padre/madre o tutor",
+      "placeholder": "Ej. María García"
+    },
+    "name": {
+      "label": "Nombre del niño/a",
+      "placeholder": "Ej. Sofía García"
+    },
+    "age": {
+      "label": "Edad del niño/a",
+      "placeholder": "Ej. 7"
+    },
+    "reason": {
+      "label": "Motivo de consulta",
+      "placeholder": "Describe brevemente el motivo de la consulta..."
+    },
+    "phone": {
+      "label": "Número telefónico",
+      "placeholder": "Ej. +52 55 1234 5678"
+    }
+  },
+  "submit": "Enviar solicitud",
+  "success": "¡Gracias! Recibimos tu solicitud y te contactaremos pronto."
+}
