@@ -1,0 +1,44 @@
+{
+  "sectionLabel": "Consultas",
+  "sectionTitle": "Tipos de consulta",
+  "disclaimer": "* Estos precios son válidos para la zona metropolitana de Guadalajara, Jalisco.",
+  "items": [
+    {
+      "title": "Primera vez",
+      "price": "$1,300",
+      "ctaType": "calendar",
+      "note": null,
+      "features": [
+        "Historial clínico completo",
+        "Exploración neurológica detallada",
+        "Diagnóstico inicial",
+        "Plan de tratamiento personalizado",
+        "Orientación a padres y familia"
+      ]
+    },
+    {
+      "title": "Subsecuente",
+      "price": "$1,000",
+      "ctaType": "calendar",
+      "note": null,
+      "features": [
+        "Revisión de evolución del paciente",
+        "Ajuste de medicamentos si es necesario",
+        "Seguimiento de estudios previos",
+        "Resolución de dudas"
+      ]
+    },
+    {
+      "title": "Interconsulta urgente",
+      "price": "$2,000 – $3,500",
+      "ctaType": "call",
+      "note": "El costo varía dependiendo del horario y los procedimientos realizados.",
+      "features": [
+        "Evaluación neurológica urgente",
+        "Atención fuera de horario habitual",
+        "Coordinación con otros especialistas",
+        "Informe detallado al médico referente"
+      ]
+    }
+  ]
+}

@@ -38,22 +38,22 @@ body {
 
   /* Primary CTA button */
   .btn-primary {
-    @apply bg-primary text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-primary-dark transition-colors;
+    @apply bg-primary text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-primary-dark transition-all hover:-translate-y-0.5 hover:shadow-md active:translate-y-0;
   }
 
   /* Outline / secondary button */
   .btn-outline {
-    @apply border border-primary text-primary text-sm font-medium px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-colors;
+    @apply border border-primary text-primary text-sm font-medium px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-all hover:-translate-y-0.5 hover:shadow-md active:translate-y-0;
   }
 
   /* WhatsApp button */
   .btn-whatsapp {
-    @apply bg-[#25D366] text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-[#1ebe5d] transition-colors;
+    @apply bg-[#25D366] text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-[#1ebe5d] transition-all hover:-translate-y-0.5 hover:shadow-md active:translate-y-0;
   }
 
   /* Call button */
   .btn-secondary {
-    @apply bg-secondary text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-[#3d0946] transition-colors;
+    @apply bg-secondary text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-[#3d0946] transition-all hover:-translate-y-0.5 hover:shadow-md active:translate-y-0;
   }
 
   /* Accent texture background — used in about section */

@@ -1,18 +1,18 @@
 {
-  "quickLinks": "Enlaces rápidos",
-  "contactUs": "Contáctanos",
-  "rights": "Todos los derechos reservados.",
+  "quickLinks": "Quick links",
+  "contactUs": "Contact us",
+  "rights": "All rights reserved.",
   "address": "Calle Luis Pérez Verdía #475 Colonia Ladrón de Guevara, 44650 Gdl, Jalisco",
   "addressUrl": "https://maps.google.com/?q=Calle+Luis+Pérez+Verdía+475,+Ladrón+de+Guevara,+44650+Guadalajara,+Jal.",
   "phone": "33 1470 4891",
   "phoneUrl": "tel:+523314704891",
   "email": "fabioladiaz.ped@gmail.com",
-  "madeWith": "Hecho con ♥ por",
+  "madeWith": "Made with ♥ by",
   "madeBy": "Margaret Software",
-  "followUs": "Síguenos",
+  "followUs": "Follow us",
   "social": {
     "instagram": "https://www.instagram.com/drafabioladiaz/",
     "facebook": "https://facebook.com/",
-    "whatsapp": "https://api.whatsapp.com/send/?phone=523314704891&text=Buen día! vi su sitio web, quisiera informes sobre la consulta de Neurología Pediátrica.&type=phone_number&app_absent=0"
+    "whatsapp": "https://api.whatsapp.com/send/?phone=523314704891&text=Good day! I visited your website and would like information about the Pediatric Neurology consultation.&type=phone_number&app_absent=0"
   }
 }

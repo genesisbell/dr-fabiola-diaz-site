@@ -1,12 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
-import translations from "@/lib/i18n";
+import { useLanguage } from "@/lib/context/LanguageContext";
 import { CalendarIcon, PhoneIcon, WhatsAppIcon } from "@/components/ui/Icons";
-
-const t = translations.es;
 
 const slideIn = (direction: "left" | "right") => ({
   initial: { opacity: 0, x: direction === "left" ? -80 : 80 },
@@ -15,20 +12,22 @@ const slideIn = (direction: "left" | "right") => ({
 });
 
 export default function AboutSection() {
+  const { t } = useLanguage();
+
   return (
     <section className="bg-accent-texture min-h-screen flex items-center py-16">
       <div className="page-container flex flex-col md:flex-row items-center justify-center w-full">
-        {/* Photo — slides in from left, overlaps text by 2rem */}
+        {/* Photo — slides in from left, overlaps card by 2rem on desktop */}
         <motion.div
-          className="flex-shrink-0 relative z-10 md:-mr-8"
+          className="flex-shrink-0 z-10 md:-mr-8 -mb-6 md:mb-0"
           {...slideIn("left")}
         >
           <Image
-            src="/doctor.png"
+            src="/doctor-v2.png"
             alt={t.general.doctorName}
-            width={500}
-            height={640}
-            className="object-contain drop-shadow-2xl"
+            width={460}
+            height={600}
+            className="w-[280px] md:w-[380px] h-auto drop-shadow-2xl"
             priority
           />
         </motion.div>
@@ -42,15 +41,15 @@ export default function AboutSection() {
           <p className="text-lg font-medium text-secondary">{t.general.specialty}</p>
           <p className="text-gray-600 leading-relaxed max-w-prose">{t.about.bio}</p>
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-2">
-            <Link href="/contact" className="btn-primary inline-flex items-center gap-2">
+            <a href="https://calendar.app.google/Zmy8KDuCYttNxJKx5" target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2">
               <CalendarIcon />
               {t.about.cta}
-            </Link>
-            <a href="https://wa.me/" className="btn-whatsapp inline-flex items-center gap-2">
+            </a>
+            <a href={t.footer.social.whatsapp} className="btn-whatsapp inline-flex items-center gap-2">
               <WhatsAppIcon />
               {t.about.ctaWhatsapp}
             </a>
-            <a href="tel:" className="btn-secondary inline-flex items-center gap-2">
+            <a href={t.footer.phoneUrl} className="btn-secondary inline-flex items-center gap-2">
               <PhoneIcon />
               {t.about.ctaCall}
             </a>
