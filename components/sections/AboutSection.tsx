@@ -5,6 +5,16 @@ import { motion } from "framer-motion";
 import { useLanguage } from "@/lib/context/LanguageContext";
 import { CalendarIcon, PhoneIcon, WhatsAppIcon } from "@/components/ui/Icons";
 
+const CALENDAR_URL =
+  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3i3S50LUzB1_hdo6-YSgF8oT_neU8wdBhsLCIPVNtGI2oe3O1YVtJAZeVfDrj0LAMMoIFLqrg-?gv=true";
+
+function openCalendar() {
+  const w = 800, h = 700;
+  const left = window.screenX + (window.outerWidth - w) / 2;
+  const top = window.screenY + (window.outerHeight - h) / 2;
+  window.open(CALENDAR_URL, "google-calendar", `width=${w},height=${h},left=${left},top=${top},scrollbars=yes`);
+}
+
 const slideIn = (direction: "left" | "right") => ({
   initial: { opacity: 0, x: direction === "left" ? -80 : 80 },
   animate: { opacity: 1, x: 0 },
@@ -27,7 +37,7 @@ export default function AboutSection() {
             alt={t.general.doctorName}
             width={460}
             height={600}
-            className="w-[280px] md:w-[380px] h-auto drop-shadow-2xl"
+            //className="w-[280px] md:w-[380px] h-auto drop-shadow-2xl"
             priority
           />
         </motion.div>
@@ -41,10 +51,10 @@ export default function AboutSection() {
           <p className="text-lg font-medium text-secondary">{t.general.specialty}</p>
           <p className="text-gray-600 leading-relaxed max-w-prose">{t.about.bio}</p>
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-2">
-            <a href="https://calendar.app.google/Zmy8KDuCYttNxJKx5" target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2">
+            <button onClick={openCalendar} className="btn-primary inline-flex items-center gap-2">
               <CalendarIcon />
               {t.about.cta}
-            </a>
+            </button>
             <a href={t.footer.social.whatsapp} className="btn-whatsapp inline-flex items-center gap-2">
               <WhatsAppIcon />
               {t.about.ctaWhatsapp}

@@ -1,8 +1,17 @@
 "use client";
 
-import Link from "next/link";
 import { useLanguage } from "@/lib/context/LanguageContext";
 import { CheckIcon, CalendarIcon, PhoneIcon } from "@/components/ui/Icons";
+
+const CALENDAR_URL =
+  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3i3S50LUzB1_hdo6-YSgF8oT_neU8wdBhsLCIPVNtGI2oe3O1YVtJAZeVfDrj0LAMMoIFLqrg-?gv=true";
+
+function openCalendar() {
+  const w = 800, h = 700;
+  const left = window.screenX + (window.outerWidth - w) / 2;
+  const top = window.screenY + (window.outerHeight - h) / 2;
+  window.open(CALENDAR_URL, "google-calendar", `width=${w},height=${h},left=${left},top=${top},scrollbars=yes`);
+}
 
 export default function PricingSection() {
   const { t } = useLanguage();
@@ -46,10 +55,10 @@ export default function PricingSection() {
                   {t.nav.callNow}
                 </a>
               ) : (
-                <a href="https://calendar.app.google/Zmy8KDuCYttNxJKx5" target="_blank" rel="noopener noreferrer" className="mt-auto btn-primary inline-flex items-center justify-center gap-2">
+                <button onClick={openCalendar} className="mt-auto btn-primary inline-flex items-center justify-center gap-2">
                   <CalendarIcon />
                   {t.about.cta}
-                </a>
+                </button>
               )}
             </div>
           ))}
