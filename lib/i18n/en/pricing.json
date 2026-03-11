@@ -1,0 +1,44 @@
+{
+  "sectionLabel": "Consultations",
+  "sectionTitle": "Types of consultation",
+  "disclaimer": "* These prices are valid for the Guadalajara metropolitan area, Jalisco.",
+  "items": [
+    {
+      "title": "First visit",
+      "price": "$1,300",
+      "ctaType": "calendar",
+      "note": null,
+      "features": [
+        "Complete medical history",
+        "Detailed neurological examination",
+        "Initial diagnosis",
+        "Personalized treatment plan",
+        "Guidance for parents and family"
+      ]
+    },
+    {
+      "title": "Follow-up",
+      "price": "$1,000",
+      "ctaType": "calendar",
+      "note": null,
+      "features": [
+        "Patient progress review",
+        "Medication adjustment if needed",
+        "Follow-up on previous studies",
+        "Q&A session"
+      ]
+    },
+    {
+      "title": "Urgent consultation",
+      "price": "$2,000 – $3,500",
+      "ctaType": "call",
+      "note": "Cost varies depending on schedule and procedures performed.",
+      "features": [
+        "Urgent neurological evaluation",
+        "Care outside regular hours",
+        "Coordination with other specialists",
+        "Detailed report to referring physician"
+      ]
+    }
+  ]
+}

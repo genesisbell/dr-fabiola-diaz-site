@@ -1,0 +1,38 @@
+{
+  "sectionLabel": "Professional Profile",
+  "sectionTitle": "Education & certifications",
+  "cedula": {
+    "label": "Medical License",
+    "medicine": { "label": "General Physician", "value": "12177894" },
+    "specialty": { "label": "Specialty", "value": "15292274" },
+    "subspecialty": { "label": "Subspecialty", "value": "XXXXXXX" }
+  },
+  "education": {
+    "label": "Academic Background",
+    "bodies": [
+      {
+        "institution": "Universidad Nacional Autónoma de México",
+        "course": "Pediatric Neurology",
+        "dateRange": "2024 - 2026"
+      },
+      {
+        "institution": "Universidad Autónoma de Sinaloa",
+        "course": "Medical Pediatrics",
+        "dateRange": "2021 - 2024"
+      },
+      {
+        "institution": "Universidad Autónoma de Sinaloa",
+        "course": "General Medicine",
+        "dateRange": "2013 - 2018"
+      }
+    ]
+  },
+  "certification": {
+    "label": "Certification",
+    "status": "Currently certified",
+    "bodies": [
+      "Consejo Mexicano de Certificación en Pediatría A.C.",
+      "Consejo Mexicano de Neurología, A.C."
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "sectionLabel": "Perfil Profesional",
+  "sectionTitle": "Formación y certificaciones",
+  "cedula": {
+    "label": "Cédula Profesional",
+    "medicine": { "label": "Cédula Profesional", "value": "12177894" },
+    "specialty": { "label": "Cédula Especialidad", "value": "15292274" },
+    "subspecialty": { "label": "Cédula Subespecialidad", "value": "XXXXXXX" }
+  },
+  "education": {
+    "label": "Formación Académica",
+    "bodies": [
+      {
+        "institution": "Universidad Nacional Autónoma de México",
+        "course": "Neurología Pediátrica",
+        "dateRange": "2024 - 2026"
+      },
+      {
+        "institution": "Universidad Autónoma de Sinaloa",
+        "course": "Pediatría Médica",
+        "dateRange": "2021 - 2024"
+      },
+      {
+        "institution": "Universidad Autónoma de Sinaloa",
+        "course": "Lic. en Medicina General",
+        "dateRange": "2013 - 2018"
+      }
+    ]
+  },
+  "certification": {
+    "label": "Certificación",
+    "status": "Certificado vigente",
+    "bodies": [
+      "Consejo Mexicano de Certificación en Pediatría A.C.",
+      "Consejo Mexicano de Neurología, A.C."
+    ]
+  }
+}

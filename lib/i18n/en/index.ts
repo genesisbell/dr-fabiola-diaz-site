@@ -8,6 +8,6 @@ import location from "./location.json";
 import booking from "./booking.json";
 import contact from "./contact.json";
 
-const es = { nav, footer, general, about, profile, pricing, location, booking, contact };
+const en = { nav, footer, general, about, profile, pricing, location, booking, contact };
 
-export default es;
+export default en;

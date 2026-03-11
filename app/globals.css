@@ -10,17 +10,76 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Brand palette */
+  --color-primary: #0297ce;
+  --color-primary-dark: #0280b0;
+  --color-secondary: #500c5a;
+  --color-accent: #e94420;
+
+  /* Social media */
+  --color-instagram: #E1306C;
+  --color-facebook: #1877F2;
+  --color-whatsapp: #25D366;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  /* Shared page-width wrapper */
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Nav link — default + active state handled via className merge in component */
+  .nav-link {
+    @apply text-sm font-medium text-gray-700 transition-colors hover:text-primary;
+  }
+
+  /* Primary CTA button */
+  .btn-primary {
+    @apply bg-primary text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-primary-dark transition-all hover:-translate-y-0.5 hover:shadow-md active:translate-y-0;
+  }
+
+  /* Outline / secondary button */
+  .btn-outline {
+    @apply border border-primary text-primary text-sm font-medium px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-all hover:-translate-y-0.5 hover:shadow-md active:translate-y-0;
+  }
+
+  /* WhatsApp button */
+  .btn-whatsapp {
+    @apply bg-[#25D366] text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-[#1ebe5d] transition-all hover:-translate-y-0.5 hover:shadow-md active:translate-y-0;
+  }
+
+  /* Call button */
+  .btn-secondary {
+    @apply bg-secondary text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-[#3d0946] transition-all hover:-translate-y-0.5 hover:shadow-md active:translate-y-0;
+  }
+
+  /* Accent / orange CTA button */
+  .btn-accent {
+    @apply bg-[#e94420] text-white text-sm font-medium px-4 py-2 rounded-md hover:bg-[#c93818] transition-all hover:-translate-y-0.5 hover:shadow-md active:translate-y-0;
+  }
+
+  /* Social media pill buttons */
+  .social-btn {
+    @apply flex flex-1 items-center justify-center gap-2 rounded-xl border border-gray-200 py-3 text-sm font-medium text-gray-600 transition;
+  }
+
+  /* Shared form input style */
+  .form-input {
+    @apply rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition;
+  }
+
+  /* Accent texture background — used in about section */
+  .bg-accent-texture {
+    background-color: var(--color-primary);
+    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+    /*background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");*/
+  }
 }
