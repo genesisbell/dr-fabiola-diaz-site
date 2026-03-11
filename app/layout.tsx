@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dra. Karla Fabiola Díaz Corral",
+  title: "Dra. Karla Fabiola Díaz Corral | Neuróloga Pediatra",
   description: "Consulta médica de la Dra. Fabiola Díaz. Medicina con calidez y compromiso.",
 };
 

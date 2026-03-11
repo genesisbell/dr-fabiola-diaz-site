@@ -25,7 +25,7 @@ export default function ProfileSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="profile" className="py-20 bg-gray-50">
       <div className="page-container flex flex-col gap-12">
         <div className="flex flex-col gap-2">
           <p className="text-sm font-semibold uppercase tracking-wider text-primary">

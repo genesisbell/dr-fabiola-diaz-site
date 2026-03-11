@@ -5,16 +5,14 @@ import Link from "next/link";
 import { useLanguage } from "@/lib/context/LanguageContext";
 import { InstagramIcon, FacebookIcon, WhatsAppIcon } from "@/components/ui/Icons";
 
-const navHrefs = ["/", "/about", "/services", "/contact"];
-
 export default function Footer() {
   const { t, locale, toggle } = useLanguage();
   const year = new Date().getFullYear();
 
   const navLinks = [
     { label: t.nav.home, href: "/" },
-    { label: t.nav.about, href: "/about" },
-    { label: t.nav.services, href: "/services" },
+    { label: t.nav.about, href: "/#profile" },
+    { label: t.nav.services, href: "/#pricing" },
     { label: t.nav.contact, href: "/contact" },
   ];
 
