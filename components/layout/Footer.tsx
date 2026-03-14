@@ -112,6 +112,9 @@ export default function Footer() {
         <div className="page-container py-4 text-center text-sm text-purple-300">
           © {year} {t.general.doctorName}. {t.footer.rights}
         </div>
+        <div className="page-container pb-1 text-center text-xs text-purple-400">
+          {t.footer.cofepris} {t.footer.cofeprisNumber}
+        </div>
         <div className="page-container pb-4 text-center text-xs text-purple-400">
           {t.footer.madeWith}{" "}
           <a href="https://margaretsoftware.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
